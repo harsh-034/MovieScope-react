@@ -3,6 +3,7 @@ import Home from "./MyComponent/Home";
 import SingleMovie from './MyComponent/SingleMovie';
 import Error from "./MyComponent/Error";
 import {  Routes, Route } from "react-router-dom";
+import "./App.css"; //css add hua hai
 
 const App = () => {
   return (
