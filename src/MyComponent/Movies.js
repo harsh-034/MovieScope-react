@@ -18,7 +18,7 @@ const Movies = () => {
     <div className="card">
       <div className= "card-info">
         <h2>
-          {SizeOf_tital.length >= 15 ? `${SizeOf_tital} ...` : SizeOf_tital}
+          {SizeOf_tital.length >= 15 ? `${SizeOf_tital} ...` : SizeOf_tital}  
 
 
           </h2> {/* tital show hoga  */}     
