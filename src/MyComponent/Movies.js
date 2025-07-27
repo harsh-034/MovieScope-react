@@ -13,12 +13,17 @@ const Movies = () => {
     <div className=" Contenar grid grid-4-col">
       {movie.map((curMovie) => {
         const {imdbID, Title, Poster} = curMovie;
-  return   <NavLink to={`movie/${imdbID}`}>
+        const SizeOf_tital = Title.substring(0, 15);// not give more titale name fetch
+  return   <NavLink to={`movie/${imdbID}`} key ={imdbID}>
     <div className="card">
       <div className= "card-info">
-        <h2>{Title}</h2> {/* tital show hoga  */}     
+        <h2>
+          {SizeOf_tital.length >= 15 ? `${SizeOf_tital} ...` : SizeOf_tital}
+
+
+          </h2> {/* tital show hoga  */}     
        
-        <img src={Poster}art={imdbID} srcset="" /> {/* picture shoow hoga  */}
+        <img src={Poster}art={imdbID}  /> {/* picture shoow hoga  */}
 
       </div>
     </div>

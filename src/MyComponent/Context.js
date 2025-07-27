@@ -3,9 +3,13 @@
 //thish page of parents  
 // Contex file ther create becouse ther are use for relation attech parrento to child got to all details 
 // context <API> and usecontext hooks ther are diffrent 
-import React ,{useContext, useEffect, useState}from 'react'  // import
+import React ,{useContext, useEffect, useState}from 'react' 
+// import
+const API_KEY = process.env.REACT_APP_API_KEY;  //thish are api hide becouse secorety is very importent //its use .env file of root 
 
-const API_URL = "http://www.omdbapi.com/?apikey=b2b44183&s=titanic"; //api key
+const API_URL = `http://www.omdbapi.com/?apikey=${API_KEY}&s=titanic`;
+//const API_URL = 'http://www.omdbapi.com/?apikey=${process.env.REACT_APP_API_KEY}&s=titanic';
+ //api key
 
 //context(warehouse) //cotext is a warehouse use for every prodect ther avellabele
 //Provider (delivery boy)               // provider are use for get content from 
@@ -76,3 +80,18 @@ export {AppContext,AppProvider, useGlobalContext};  // thet this line get and ex
 
 //http://www.omdbapi.com/??apikey=[yourkey]&
 //http://www.omdbapi.com/?apikey=b2b44183&s=titanic"
+
+
+
+
+//.env ther are use of secure your data and api 
+//step1 = .env ther are create file "root " min finel file 
+//step2 = got ot the .gitigonore file and mice thet add .env file 
+//step3 = .env make sure neet and clean and then same write "REACT_APP_Name=yourkey" name ke jagaha par aap kuch bhi de sakte hai
+//"="after put your key 
+//step4 = and go your api urel other vaice go yor url 
+//like const API_URL = `http://www.omdbapi.com/?apikey=${API_KEY}&s=titanic`;  betwin put "API_KEY"in ${}
+//after creat constent like "const API_KEY = process.env.REACT_APP_API_KEY; " 
+//write : "process.env.your_name" and "your_name" me write wahi karo jo tumne .env file me diye the 
+//step 4 : restert your server lets use your api 
+//

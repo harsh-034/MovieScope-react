@@ -15,7 +15,7 @@ const App = () => {
         <Route path="movie/:id" element={<SingleMovie />}/>    {/* ye idpe jaye ga url ke  */}
         <Route path="*" element={<Error />} />   {/*this file create for error becuse clent visit not avvlebal page   */}
       </Routes>
-      
+        
       
       </>
     
