@@ -51,9 +51,15 @@ const AppProvider = ({children}) => {
     };
 
 useEffect(() => {
-   // getMovies(API_URL);  //main yahi hai 
+    //ther are use " Debouncing in React JS" becouse kitane time ke bad serch kiya hu dikhana hai use settime
+   let timerOut = setTimeout(() => {    
+         // getMovies(API_URL);  //main yahi hai 
    getMovies(`${API_URL}&s=${query}`); //ye jo hai wo serch ke liya ho raha hai or serch me jo karunga oo ayega 
    {/*4 fir ooqry me gya or fetch ho gya  */}
+    }, 800);
+//ther are dbounce becouse itsis importen ther not get more pracer in api    
+    return () => clearTimeout(timerOut);  // thet ther use 1 time responce ther are "debounce" 
+   
 },[query]);{/* iske wajse */}
 
 return <AppContext.Provider value= {{ movie, isLoding, isError,  query, setQuery}}>
