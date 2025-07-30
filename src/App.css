@@ -112,17 +112,36 @@ input {
   place-items: center;
 }
 
-.loading {
-  font-size: 3.2rem;
-  color: var(--text-clr);
-  text-align: center;
+.loading-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #0f172a; /* dark background for effect */
 }
 
-.movie-section .loading {
+.circular-loader {
+  width: 60px;
+  height: 60px;
+  border: 6px solid rgba(255, 255, 255, 0.2);
+  border-top-color: #00d9ff;
+  border-radius: 50%;
+  animation: spin 0.8s ease-in-out infinite;
+  box-shadow: 0 0 10px #00d9ff;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* .movie-section .loading {
   font-size: 3.2rem;
   color: var(--bg-clr);
   text-align: center;
-}
+} */
 
 .movie-card {
   min-width: 30rem;

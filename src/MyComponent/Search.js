@@ -5,7 +5,8 @@ import { Form } from 'react-router-dom';
 
 const Search = () => {
   const {query, setQuery, isError } = useGlobalContext(); {/*2 set query pe gya or wo cotext file me gya import ho gya   */}
-   return (<>
+   return (
+   <>
   <section className='search-section'>
     <h2>Search Your Favourite Movie</h2>
     <form action="" onSubmit={(e) => e.preventDefault()}>

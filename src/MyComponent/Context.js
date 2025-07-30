@@ -7,7 +7,7 @@ import React ,{useContext, useEffect, useState}from 'react'
 
 // import
 const API_KEY = process.env.REACT_APP_API_KEY;  //thish are api hide becouse secorety is very importent //its use .env file of root 
-const API_URL = `http://www.omdbapi.com/?apikey=${API_KEY}`;
+ export const API_URL = `http://www.omdbapi.com/?apikey=${API_KEY}`;
 //const API_URL = `http://www.omdbapi.com/?apikey=${API_KEY}&s=titanic`;
 
 //const API_URL = 'http://www.omdbapi.com/?apikey=${process.env.REACT_APP_API_KEY}&s=titanic';
@@ -30,17 +30,22 @@ const AppProvider = ({children}) => {
 
 // thet try catch and fetch api
     const getMovies = async (url) => {
+        setISLoding(true);
         try {
             const res = await fetch(url);
             const data = await  res.json();
             console.log(data);
             if(data.Response === "True"){
                 setISLoding(false);
+                   setISError({
+                    show: false,
+                    msg: "",
+                })
                 setMovie(data.Search);
-            }else{
+            } else {
                 setISError({
                     show: true,
-                    msg:data.error,
+                    msg: data.Error,
                 })
             }
 
@@ -56,7 +61,7 @@ useEffect(() => {
          // getMovies(API_URL);  //main yahi hai 
    getMovies(`${API_URL}&s=${query}`); //ye jo hai wo serch ke liya ho raha hai or serch me jo karunga oo ayega 
    {/*4 fir ooqry me gya or fetch ho gya  */}
-    }, 800);
+    }, 500);
 //ther are dbounce becouse itsis importen ther not get more pracer in api    
     return () => clearTimeout(timerOut);  // thet ther use 1 time responce ther are "debounce" 
    
