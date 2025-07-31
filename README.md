@@ -50,17 +50,42 @@
 
 2. **Add your API key**:
 
+# 🎬 MovieScope - React Movie Search App
+
+**MovieScope** is a responsive React application that allows users to search for movies and view detailed information using the OMDb API.
+
+---
+
+## 🔐 Environment Setup
+
+### 1. Create a `.env` file in your root directory:
 ```env
 REACT_APP_OMDB_API_KEY=your_actual_api_key_here
+```
 
+### 2. Use the API key in your React code:
+```js
 const apiKey = process.env.REACT_APP_OMDB_API_KEY;
 fetch(`https://www.omdbapi.com/?apikey=${apiKey}&s=batman`);
+```
 
-npm start
+---
 
+## 🚫 .gitignore Configuration
+
+Make sure you do **not** push sensitive files to GitHub:
+
+```
 .env
 node_modules/
 build/
+```
+
+---
+
+## 📁 Folder Structure
+
+```
 MovieScope-react/
 ├── public/
 ├── src/
@@ -72,26 +97,44 @@ MovieScope-react/
 ├── .gitignore
 ├── package.json
 └── README.md
+```
 
-🧪 Running Locally
+---
 
-##  Clone the repository:
+## 🧪 Running Locally
 
+### 1. Clone the repository:
+```bash
 git clone https://github.com/harsh-034/MovieScope-react.git 
+```
 
-##  Navigate into the project directory:
-
+### 2. Navigate into the project directory:
+```bash
 cd MovieScope-react
+```
 
-##   Install dependencies:
-
+### 3. Install dependencies:
+```bash
 npm install
+```
 
-##  Start the development server:
-
+### 4. Start the development server:
+```bash
 npm start
+```
+
+Now open your browser and visit:  
+[http://localhost:3000](http://localhost:3000)
+
+---
 
 ## 👤 Author
-##   Harsh Gupta
-🔗 GitHub: @harsh-034
-🔗 LinkedIn: linkedin.com/in/harsh-034
+
+**Harsh Gupta**  
+💻 Frontend Developer | React Enthusiast  
+📍 Mumbai, India
+
+- 🔗 GitHub: [@harsh-034](https://github.com/harsh-034)  
+- 🔗 LinkedIn: [linkedin.com/in/harsh-034](https://www.linkedin.com/in/harsh-034)
+
+---
