@@ -7,7 +7,7 @@ import React ,{useContext, useEffect, useState}from 'react'
 
 // import
 const API_KEY = process.env.REACT_APP_API_KEY;  //thish are api hide becouse secorety is very importent //its use .env file of root 
- export const API_URL = `http://www.omdbapi.com/?apikey=${API_KEY}`;
+ export const API_URL = `https://www.omdbapi.com/?apikey=${API_KEY}`;
 //const API_URL = `http://www.omdbapi.com/?apikey=${API_KEY}&s=titanic`;
 
 //const API_URL = 'http://www.omdbapi.com/?apikey=${process.env.REACT_APP_API_KEY}&s=titanic';
