@@ -41,18 +41,10 @@
 
 ---
 
-## 🔐 Environment Setup & API Key Security
-
-### 🧾 Step-by-Step Guide
-
-1. **Create a `.env` file** in your project root:
+## 🔐  API Key Security
 
 
-2. **Add your API key**:
-
-# 🎬 MovieScope - React Movie Search App
-
-**MovieScope** is a responsive React application that allows users to search for movies and view detailed information using the OMDb API.
+**Create a `.env` file** in your project root:
 
 ---
 
