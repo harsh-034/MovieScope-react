@@ -13,7 +13,7 @@
 ## 📸 Screenshots
 
 ### 🔍 Movie Search Page  
-![Movie Search](./src/MyComponent/Image/MovieScope_Image1.jpg)
+![Movie Search](/src/MyComponent/Image/MovieScope_Image1.jpg)
 
 ### 🎥 Movie Details Page  
 ![Movie Details](./src/MyComponent/Image/MovieScope_image2.jpg)
