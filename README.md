@@ -13,10 +13,10 @@
 ## 📸 Screenshots
 
 ### 🔍 Movie Search Page  
-![Movie Search](https://your-uploaded-screenshot-link-1)
+![Movie Search](./src/MyComponent/Image/MovieScope_Image1.jpg)
 
 ### 🎥 Movie Details Page  
-![Movie Details](https://your-uploaded-screenshot-link-2)
+![Movie Details](./src/MyComponent/Image/MovieScope_image2.jpg)
 
 ---
 
