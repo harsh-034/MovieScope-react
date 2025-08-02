@@ -4,9 +4,9 @@
 
 ---
 
-<!-- ## 🔗 Live Demo
+## 🔗 Live Demo
 
-[👉 View Live App](https://your-live-link.netlify.app) -->
+[👉 View Live App](https://moviescope0034.netlify.app/)
 
 ---
 
